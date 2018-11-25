@@ -1,1 +1,52 @@
-//CSS
+/**********************************
+			GENERAL
+**********************************/
+
+.container {
+	display: grid;
+}
+
+
+/*** shop front ***/
+
+.container {
+	display: grid;
+	grid-template-columns: ;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap-columns: 10px;
+	grid-gap-rows: 5px;
+	margin: 2%;
+	background-color: grey;
+}
+
+.holder {
+	background-color: white;
+    margin: 5%;
+	padding: 20px;
+}
+
+h2, p {
+	text-align: center;
+}
+
+.center {
+	display: block;
+   	margin-left: auto;
+    margin-right: auto;
+   	width: 50%;
+}
+
+button {
+	float: right;
+}
+
+.price {
+	position: relative;
+	bottom: 5px;
+	color: red;
+}
+
+
+
+
+
