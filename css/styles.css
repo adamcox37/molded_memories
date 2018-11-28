@@ -9,14 +9,14 @@
 
 /*** shop front ***/
 
-.container {
+.store-container {
 	display: grid;
-	grid-template-columns: ;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
 	grid-gap-columns: 10px;
 	grid-gap-rows: 5px;
 	margin: 2%;
-	background-color: grey;
+	background-color: #d3d3d3;
 }
 
 .holder {
@@ -34,19 +34,45 @@ h2, p {
    	margin-left: auto;
     margin-right: auto;
    	width: 50%;
+   	border-style: solid;
+   	border-color: #d3d3d3;
 }
 
-button {
+/*button {
 	float: right;
-}
+}*/
 
-.price {
+#price {
 	position: relative;
 	bottom: 5px;
 	color: red;
 }
 
+/*** Footer ***/
+footer {
+	text-align: center;
+	font-size: 16px;
+	background-color: #d3d3d3;
+	padding: 15px;
+	margin-top: 30px;
 
+}
+
+/**********************************
+			MEDIA QUERIES
+**********************************/
+
+/*** Desktop ***/
+@media (min-width: 679px) {
+	.store-container {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+
+	footer {
+		font-size: 18px;
+	}
+}
 
 
 
