@@ -6,6 +6,10 @@
 	display: grid;
 }
 
+body, html {
+	height: 100%;
+}
+
 /**********************************
 			HEADER
 **********************************/
@@ -18,6 +22,7 @@
 .main-logo {
 	padding-right: 20px;
 }
+
 .secondary-logo {
 	display: none;
 }
@@ -72,6 +77,32 @@
 	padding-bottom: 20px;
 	display: flex;
 	justify-content: space-around;
+}
+
+/**********************************
+			HERO/JUMBOTRON
+**********************************/
+
+.bigPez {
+	background-image: url(../img/headless_big.jpg);
+	height: 35%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.bigPez-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #00ff99;
+}
+
+.bigPez-text h1 {
+	font-size: 3em;
 }
 
 /**********************************
@@ -148,6 +179,14 @@ footer {
 
 	.main-header {
 		justify-content: space-between;
+	}
+
+	.bigPez {
+		height: 50%;
+	}
+
+	.bigPez-text h1 {
+		font-size: 6em;
 	}
 
 	footer {
