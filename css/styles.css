@@ -10,13 +10,16 @@ body, html {
 	height: 100%;
 }
 
+a, a:visited, a:hover {
+	text-decoration: none;
+	color: navy;
+}
 /**********************************
 			HEADER
 **********************************/
 
 .topbar {
 	margin: 20px;
-	background-color: #00ff99;
 }
 
 .main-logo {
@@ -114,7 +117,9 @@ h2, p {
     margin-right: auto;
    	width: 50%;
    	border-style: solid;
-   	border-color: #d3d3d3;
+	border-color: #ccff33;
+	border-radius: 50%;
+	   
 }
 
 #price {
@@ -125,13 +130,29 @@ h2, p {
 }
 
 h3 {
-	color: salmon;
 	font-size: 2em;
 }
 
-button {
-	
+.button {
+	background-color: #ccff33;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #d3d3d3;
+	border-radius: 12px;
+	padding: 12px 24px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 4px 2px;
 }
+	
+
+/**********************************
+		INDIVIDUAL ITEMS PAGE
+**********************************/
+
+
+
 /**********************************
 			FOOTER
 **********************************/
