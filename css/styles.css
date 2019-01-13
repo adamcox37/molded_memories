@@ -14,6 +14,7 @@ a, a:visited, a:hover {
 	text-decoration: none;
 	color: navy;
 }
+
 /**********************************
 			HEADER
 **********************************/
@@ -151,6 +152,19 @@ h3 {
 		INDIVIDUAL ITEMS PAGE
 **********************************/
 
+.thumbnail {
+	display: inline;
+	width: 25%;
+	margin: 10px;
+	text-align: center;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: #ccff33;
+}
+
+.content {
+	margin: 5%;
+}
 
 
 /**********************************
@@ -186,12 +200,12 @@ footer {
 		justify-content: space-between;
 	}
 
-	.bigPez {
-		height: 50%;
+	.thumbnail {
+		width: 15%;
 	}
 
-	.bigPez-text h1 {
-		font-size: 6em;
+	.content h1 {
+		font-size: 3em;
 	}
 
 	footer {
