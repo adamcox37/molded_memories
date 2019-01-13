@@ -166,6 +166,10 @@ h3 {
 	margin: 5%;
 }
 
+.content p {
+	text-align: left;
+}
+
 
 /**********************************
 			FOOTER
