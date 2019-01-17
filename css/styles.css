@@ -23,6 +23,12 @@ a, a:visited, a:hover {
 	margin: 20px;
 }
 
+.main-header {
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+
 .main-logo {
 	padding-right: 20px;
 }
@@ -30,59 +36,56 @@ a, a:visited, a:hover {
 .secondary-logo {
 	display: none;
 }
-/** Dropdown Menu Build **/
 
-/* Hamburg bars */
+/** Overlay Menu**/
+
+/*Hamburg bars*/
 .menu-icon {
-	max-width: 25px;
+	font-size: 25px;
+	margin-top: 5px;
+	cursor: pointer;
 }
 
-/* Dropdown Button */
-.dropbtn {
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-}
-
-/* The container <div> */
-.dropdown {
-	position: relative;
-	display: inline-block;
-}
-
-/* Dropdown content */
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f9f9f9;
-	min-width: 160px;
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
 	z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-	color: black;
-	padding: 12px 16px;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.9);
+	overflow-x: hidden;
+	transition: 0.5s;
+  }
+  
+  .overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+  }
+  
+  .overlay a {
+	padding: 8px;
 	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
 	display: block;
-}
-
-/* Changing colors on dropdown */
-.dropdown-content a:hover {
-	background-color: #f1f1f1;
-}
-
-/* Show the dropdown menu */
-.show {
-	display: block;
-}
-
-.main-header {
-	padding-bottom: 20px;
-	display: flex;
-	justify-content: space-around;
-}
-
+	transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+  }
 /**********************************
 			HERO/JUMBOTRON
 **********************************/
@@ -95,7 +98,7 @@ a, a:visited, a:hover {
 }
 
 .splash img {
-	max-width: 950%;
+	max-width: 955%;
 	height: auto;
 }
 
@@ -105,7 +108,7 @@ a, a:visited, a:hover {
 
 .storefront {
 	text-align: center;
-	font-size: 3em;
+	font-size: 2em;
 }
 .store-container {
 	display: grid;
@@ -168,7 +171,7 @@ h3 {
 
 .thumbnail {
 	display: inline;
-	/*width: 25%;*/
+	width: 25%;
 	margin: 10px;
 	text-align: center;
 	border-radius: 50%;
@@ -214,8 +217,13 @@ footer {
 		padding-right: 15px;
 	}
 
+	.storefront {
+		font-size: 3em;
+	}
+
 	.main-header {
 		justify-content: space-between;
+		margin: 2%;
 	}
 
 	.thumbnail {
