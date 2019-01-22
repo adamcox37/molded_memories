@@ -35,11 +35,7 @@
 		<h1 class="storefront">STORE FRONT</h1>
 		<div class="store-container">
 			<div class="holder">
-				<img src="img/batman_portrait.png" alt="Batman" id="myImg" class="center">
-				<div id="myModal" class="modal">
-					<span class="close">&times;</span>
-					<img class="modal-content" id="img01">
-				</div>
+				<img src="img/batman_portrait.png" alt="Batman" onclick="openModal(); currentSlide(1)" class="center">
 				<h2>Batman</h2>
 				<p>Some people call me the space cowboy</p>
 				<div id="price">
@@ -49,11 +45,7 @@
 			</div>
 
 			<div class="holder">
-				<img src="img/bride_portrait.png" alt="Bride" id="myImg" class="center">
-				<div id="myModal" class="modal">
-					<span class="close">&times;</span>
-					<img class="modal-content" id="img01">
-				</div>
+				<img src="img/bride_portrait.png" alt="Bride" onclick="openModal(); currentSlide(2)" id="myImg" class="center">
 				<h2>Bride</h2>
 				<p>Some call me the gangster of love</p>
 				<div id="price">
@@ -63,7 +55,7 @@
 			</div>
 			
 			<div class="holder">
-				<a href="#"><img src="img/bunny_portrait.png" alt="Bunny" class="center"></a>
+				<img src="img/bunny_portrait.png" alt="Bunny" onclick="openModal(); currentSlide(3)" class="center">
 				<h2>Bunny</h2>
 				<p>Some people call me Maurice</p>
 				<div id="price">
@@ -73,7 +65,7 @@
 			</div>
 
 			<div class="holder">
-				<a href="#"><img src="img/garfield_portrait.png" alt="Garfield" class="center"></a>
+				<img src="img/garfield_portrait.png" alt="Garfield" onclick="openModal(); currentSlide(4)" class="center">
 				<h2>Garfield</h2>
 				<p>Whomp! Whomp!</p>
 				<div id="price">
@@ -83,7 +75,7 @@
 			</div>
 
 			<div class="holder">
-				<a href="#"><img src="img/panda_portrait.png" alt="Panda" class="center"></a>
+				<img src="img/panda_portrait.png" alt="Panda" onclick="openModal(); currentSlide(5)" class="center">
 				<h2>Panda</h2>
 				<p>Because I speak of the pompitous of love</p>
 				<div id="price">
@@ -93,7 +85,7 @@
 			</div>
 
 			<div class="holder">
-				<a href="#"><img src="img/raphael_portrait.png" alt="Raphael" class="center"></a>
+				<img src="img/raphael_portrait.png" alt="Raphael" onclick="openModal(); currentSlide(6)" class="center">
 				<h2>Raphael</h2>
 				<p>People talk about me baby</p>
 				<div id="price">
@@ -103,7 +95,7 @@
 			</div>
 
 			<div class="holder">
-				<a href="#"><img src="img/santa_portrait.png" alt="Santa" class="center"></a>
+				<img src="img/santa_portrait.png" alt="Santa" onclick="openModal(); currentSlide(7)" class="center">
 				<h2>Santa</h2>
 				<p>Say I'm doing you wrong, doing you wrong</p>
 				<div id="price">
@@ -113,7 +105,7 @@
 			</div>
 
 			<div class="holder">
-				<a href="#"><img src="img/skull_portrait.png" alt="Skeleton" class="center"></a>
+				<img src="img/skull_portrait.png" alt="Skeleton" onclick="openModal(); currentSlide(8)" class="center">
 				<h2>Skeleton</h2>
 				<p>Well don't you worry baby</p>
 				<div id="price">
@@ -123,12 +115,46 @@
 			</div>
 
 			<div class="holder">
-				<a href="#"><img src="img/spiderman_portrait.png" alt="Spiderman" class="center"></a>
+				<img src="img/spiderman_portrait.png" alt="Spiderman" onclick="openModal(); currentSlide(9)" class="center">
 				<h2>Spiderman</h2>
 				<p>Because I'm right here at home.</p>
 				<div id="price">
 					<h3>$9.99</h3>
 					<a href="shop_spiderman.html" class="button"> TAKE A PEEK </a>
+				</div>
+			</div>
+
+			<!-- Modal -->
+			<div id="myModal" class="modal">
+				<span class="close" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides">
+						<img src="img/batman_portrait.png">
+					</div>
+					<div class="mySlides">
+						<img src="img/bride_portrait.png">
+					</div>
+					<div class="mySlides">
+						<img src="img/bunny_portrait.png">
+					</div>
+					<div class="mySlides">
+						<img src="img/garfield_portrait.png">
+					</div>
+					<div class="mySlides">
+						<img src="img/panda_portrait.png">
+					</div>
+					<div class="mySlides">
+						<img src="img/raphael_portrait.png">
+					</div>
+					<div class="mySlides">
+						<img src="img/santa_portrait.png">
+					</div>
+					<div class="mySlides">
+						<img src="img/skeleton_portrait.png">
+					</div>
+					<div class="mySlides">
+						<img src="img/spiderman_portrait.png">
+					</div>
 				</div>
 			</div>
 		</div>
