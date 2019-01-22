@@ -164,6 +164,7 @@ h3 {
 	font-size: 16px;
 	font-weight: bold;
 	margin: 4px 2px;
+	cursor: pointer;
 }
 
 /** Lightbox/Modal **/
@@ -223,6 +224,16 @@ h3 {
 .content p {
 	text-align: left;
 }
+
+/** Shopping Cart **/
+
+.cartbar {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
 
 
 /**********************************

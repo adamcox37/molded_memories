@@ -10,6 +10,8 @@ function closeNav() {
 	document.getElementById("myNav").style.width = "0%";
   }
 
+
+
 // Modal //
 
 //open
@@ -47,4 +49,16 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+
+
+// Add To Cart Counter //
+
+var add = (function () {
+  var counter = 0;
+  return function () {return counter += 1;}
+})();
+
+function addCart() {
+  document.getElementById("cart").innerHTML = add();
 }
