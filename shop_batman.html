@@ -10,37 +10,49 @@
 <body>
     <div class="container">
         <div class="topbar"></div>
-            <!-- Menu -->
-            <header class="main-header">
-                <div id="myNav" class="overlay">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div class="overlay-content">
-                        <a href="#">THESE</a>
-                        <a href="#">DON'T</a>
-                        <a href="#">ACTUALLY</a>
-                        <a href="#">WORK</a>
-                    </div>
+        <!-- Menu -->
+        <header class="main-header">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="error.html">THESE</a>
+                    <a href="error.html">DON'T</a>
+                    <a href="error.html">ACTUALLY</a>
+                    <a href="error.html">WORK</a>
                 </div>
-                <span class="menu-icon" onclick="openNav()">&#9776;</span>
-                <img src="img/main_logo.png" alt="main logo" class="main-logo">
-                <img src="img/secondary_logo.png" alt="secondary logo" class="secondary-logo">
-            </header>
+            </div>
+            <span class="menu-icon" onclick="openNav()">&#9776;</span>
+            <img src="img/main_logo.png" alt="main logo" class="main-logo">
+            <img src="img/secondary_logo.png" alt="secondary logo" class="secondary-logo">
+        </header>
         <div class="cartbar">
             <a href="index.html">&larr; Back to Home Page</a>
-            <a href="#" id="cart"><img src="img/shopping_cart.png" alt="shopping cart">0</a>
-            
+            <a href="#" id="cart"><img src="img/shopping_cart.png" alt="shopping cart">  0</a>
         </div>
 
         <!-- Shop Content -->
         <div class="content">
         <div class="row">
-            <img src="img/batman_portrait.png" alt="batman" class="thumbnail">
-            <img src="img/batman.png" alt="batman" class="thumbnail">
-            <img src="img/batman_side.png" alt="batman" class="thumbnail">
+            <img src="img/batman_portrait.png" alt="batman" onclick="openModal(); currentSlide(1)" class="thumbnail">
+            <img src="img/batman.png" alt="batman" onclick="openModal(); currentSlide(2)" class="thumbnail">
+            <img src="img/batman_side.png" alt="batman" onclick="openModal(); currentSlide(3)" class="thumbnail">
         </div>
  
         <!-- lightbox for image gallery -->
-
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <img src="img/batman_portrait.png">
+                </div>
+                <div class="mySlides">
+                    <img src="img/batman.png">
+                </div>
+                <div class="mySlides">
+                    <img src="img/batman_side.png">
+                </div>
+            </div>
+        </div>
 
         <!-- Item Details -->
             <h1>Batman</h1>

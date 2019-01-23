@@ -196,7 +196,6 @@ h3 {
 	right: 45px;
 	color: #f1f1f1;
 	font-size: 60px;
-	font-weight: bold;
 	cursor: pointer;
   }
 
@@ -215,6 +214,7 @@ h3 {
 	border-radius: 50%;
 	border-style: solid;
 	border-color: #ccff33;
+	cursor: pointer;
 }
 
 .content {
