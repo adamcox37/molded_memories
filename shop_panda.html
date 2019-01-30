@@ -32,14 +32,27 @@
 
         <!-- Shop Content -->
         <div class="content">
-        <div class="row">
-            <img src="img/panda_portrait.png" alt="panda" class="thumbnail">
-            <img src="img/panda.png" alt="panda" class="thumbnail">
-            <img src="img/panda_side.png" alt="panda" class="thumbnail">
-        </div>
+            <div class="row">
+                <img src="img/panda_portrait.png" alt="panda" onclick="openModal(); currentSlide(1)" class="thumbnail">
+                <img src="img/panda.png" alt="panda" onclick="openModal(); currentSlide(2)" class="thumbnail">
+                <img src="img/panda.png" alt="panda" onclick="openModal(); currentSlide(3)" class="thumbnail">
+            </div>
  
         <!-- lightbox for image gallery -->
-
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <img src="img/panda_portrait.png">
+                </div>
+                <div class="mySlides">
+                    <img src="img/panda.png">
+                </div>
+                <div class="mySlides">
+                    <img src="img/panda_side.png">
+                </div>
+            </div>
+        </div>
 
         <!-- Item Details -->
             <h1>Panda</h1>

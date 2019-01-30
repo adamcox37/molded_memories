@@ -33,14 +33,27 @@
 
         <!-- Shop Content -->
         <div class="content">
-        <div class="row">
-            <img src="img/raphael_portrait.png" alt="Raphael" class="thumbnail">
-            <img src="img/raphael.png" alt="Raphael" class="thumbnail">
-            <img src="img/raphael_side.png" alt="Raphael" class="thumbnail">
-        </div>
+            <div class="row">
+                <img src="img/raphael_portrait.png" alt="raphael" onclick="openModal(); currentSlide(1)" class="thumbnail">
+                <img src="img/raphael.png" alt="raphael" onclick="openModal(); currentSlide(2)" class="thumbnail">
+                <img src="img/raphael_side.png" alt="raphael" onclick="openModal(); currentSlide(3)" class="thumbnail">
+            </div>
  
         <!-- lightbox for image gallery -->
-
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <img src="img/raphael_portrait.png">
+                </div>
+                <div class="mySlides">
+                    <img src="img/raphael.png">
+                </div>
+                <div class="mySlides">
+                    <img src="img/raphael_side.png">
+                </div>
+            </div>
+        </div>
 
         <!-- Item Details -->
             <h1>Raphael</h1>
