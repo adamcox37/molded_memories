@@ -59,34 +59,35 @@ a, a:visited, a:hover {
 	transition: 0.5s;
   }
   
-  .overlay-content {
+.overlay-content {
 	position: relative;
 	top: 25%;
 	width: 100%;
 	text-align: center;
 	margin-top: 30px;
-  }
-  
-  .overlay a {
+}
+
+.overlay a {
 	padding: 8px;
 	text-decoration: none;
 	font-size: 36px;
 	color: #818181;
 	display: block;
 	transition: 0.3s;
-  }
-  
-  .overlay a:hover, .overlay a:focus {
+}
+
+.overlay a:hover, .overlay a:focus {
 	color: #f1f1f1;
-  }
-  
-  .overlay .closebtn {
+}
+
+.overlay .closebtn {
 	position: absolute;
-	top: 20px;
-	right: 45px;
-	font-size: 60px;
+	top: 15px;
+	right: 35px;
+	font-size: 30px;
 	color: #f1f1f1;
-  }
+}
+
 /**********************************
 			HERO/JUMBOTRON
 **********************************/
@@ -182,7 +183,7 @@ h3 {
 
 /** Lightbox/Modal **/
 
-  .modal {
+.modal {
 	display: none;
 	position: fixed;
 	z-index: 1;
@@ -193,28 +194,29 @@ h3 {
 	height: 100%;
 	overflow: auto;
 	background-color: rgba(0,0,0,0.9);
-  }
+}
 
-  .modal-content {
-	position: relative;
+.modal-content img {
 	margin: auto;
 	display: block;
 	width: 80%;
-	max-width: 1200px;
-  }
+	max-width: 500px;
+}
 
-  .close {
+
+.close {
 	position: absolute;
-	top: 20px;
-	right: 45px;
+	top: 15px;
+	right: 35px;
 	color: #f1f1f1;
-	font-size: 60px;
+	font-size: 30px;
 	cursor: pointer;
-  }
+}
 
-  .mySlide {
-	  display: none;
-  }
+.mySlide {
+	display: none;
+}
+
 /**********************************
 		INDIVIDUAL ITEMS PAGE
 **********************************/
